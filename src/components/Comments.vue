@@ -27,13 +27,13 @@ export default {
             }else{
                 let mode;
                 switch(this.$route.name){
-                    case 'zenboDetail' :
+                    case 'zenbo' :
                         mode = 'comment';
                         break;
-                    case 'noteDetail' :
+                    case 'note' :
                         mode = 'pccomment';
                         break;
-                    case 'miDetail' :
+                    case 'mi' :
                         mode = 'comcomment';
                         break;
                 }

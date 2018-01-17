@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Zenbo from '@/components/Zenbo'
-import Note from '@/components/Note'
-import Mi from '@/components/Mi'
-import Detail from '@/components/Detail'
+import Home from '@/components/Home'
 
 Vue.use(Router)
 
@@ -14,38 +11,17 @@ export default new Router({
         {
             path: '/zenbo',
             name: 'zenbo',
-            component: Zenbo,
-            children: [
-                {
-                    path: 'detail/:type',
-                    name: 'zenboDetail',
-                    component: Detail
-                }
-            ]
+            component: Home
         },
         {
             path: '/note',
             name: 'note',
-            component: Note,
-            children: [
-                {
-                    path: 'detail/:type',
-                    name: 'noteDetail',
-                    component: Detail
-                }
-            ]
+            component: Home
         },
         {
             path: '/mi',
             name: 'mi',
-            component: Mi,
-            children: [
-                {
-                    path: 'detail/:type',
-                    name: 'miDetail',
-                    component: Detail
-                }
-            ]
+            component: Home
         },
         {
             path: '/',
